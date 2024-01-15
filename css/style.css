@@ -10,6 +10,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    margin-bottom: 100px;
 }
 
 h1,
@@ -25,6 +26,7 @@ li {
     font-size: 16px;
 }
 
+/* variable color */
 :root {
     --primary-color: #FF5400;
     --secondary: #131318;
@@ -37,7 +39,8 @@ nav {
     align-items: center;
     padding: 20px 0;
 }
-.fa-bars{
+
+.fa-bars {
     display: none;
 }
 
@@ -93,7 +96,8 @@ nav {
     border: none;
     outline: none;
 }
-.banner-input-container{
+
+.banner-input-container {
     width: 80%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.30);
@@ -104,6 +108,7 @@ nav {
     border-radius: 8px;
     margin-top: 48px;
 }
+
 .input_btn {
     padding: 16px;
     font-size: 16px;
@@ -117,30 +122,82 @@ nav {
     cursor: pointer;
     margin-left: 20px;
 }
-.primary_btn{
+
+.primary_btn {
     background-color: var(--primary-color);
     color: #fff;
     cursor: pointer;
 }
+
+/* popular */
+.popular_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 53px;
+}
+
+.popular_contant {
+    width: 60%;
+}
+.popular_title h2{
+font-size: 40px;
+}
+.popular_contant p{
+margin: 24px 0;
+}
+.popular_contant li{
+    margin-bottom: 20px;
+}
+.popular_img {
+    width: 40%;
+}
+.popular_img img{
+    width: 100%;
+}
+
 /* mobile resposive */
 @media only screen and (max-width: 600px) {
+    .container{
+        margin-bottom: 24px;
+    }
     .menu-item {
         display: none;
     }
-    .banner{
+
+    .banner {
         padding: 32px 24px;
     }
-    .banner-description h1{
+
+    .banner-description {
+        width: 100%;
+
+    }
+
+    .banner-description h1 {
         font-size: 22px;
     }
-    .banner-description p{
+
+    .banner-description p {
         font-size: 14px;
     }
-    .fa-bars{
+
+    .fa-bars {
         display: block;
     }
-    .banner-input-container{
+
+    .banner-input-container {
         flex-direction: column;
         gap: 20px;
     }
-  }
+    /* popular */
+    .popular_container {
+        flex-direction: column;
+    }
+    .popular_contant {
+        width: 100%;
+    }
+    .popular_img {
+        width: 100%;
+    }
+}
