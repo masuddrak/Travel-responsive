@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* common css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 800;
+}
+
+p,
+li {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+:root {
+    --primary-color: #FF5400;
+    --secondary: #131318;
+}
+
+/* header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.fa-bars{
+    display: none;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo h2 {
+    color: var(--secondary);
+    font-size: 36px;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.menu-item {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.banner {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
+        url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+    border-radius: 16px;
+    margin-top: 40px;
+    width: 100%;
+
+}
+
+.banner-description {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.banner-description h1 {
+    font-size: 64px;
+    margin-bottom: 24px;
+}
+
+.banner-input-container input {
+    padding: 16px 0 16px 16px;
+    width: 174px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+.banner-input-container{
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.30);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 48px;
+}
+.input_btn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    color: #0702115e;
+    width: 174px;
+}
+
+.input_btn i {
+    cursor: pointer;
+    margin-left: 20px;
+}
+.primary_btn{
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+/* mobile resposive */
+@media only screen and (max-width: 600px) {
+    .menu-item {
+        display: none;
+    }
+    .banner{
+        padding: 32px 24px;
+    }
+    .banner-description h1{
+        font-size: 22px;
+    }
+    .banner-description p{
+        font-size: 14px;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .banner-input-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+  }
