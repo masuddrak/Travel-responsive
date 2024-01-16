@@ -48,6 +48,11 @@ nav {
     display: flex;
 }
 
+.logo img {
+    width: 40px;
+    height: 46.673px;
+}
+
 .logo h2 {
     color: var(--secondary);
     font-size: 36px;
@@ -294,13 +299,215 @@ nav {
 .choose_item p {
     font-size: 16px;
 }
+/* testimonials */
+.testimonial_icon{
+margin-top: 15px;
+}
+.testimonial_icon i{
+color: #FF5400;
+}
+.testimonials_img{
+    width: 30px;
+}
+.testimonial_name{
+    padding: 0px;
+    font-size: 20px;
+}
+/* deals an discount */
+.deals,
+.deals_2,
+.deals_3 {
+    background-image: url("/Images/Group\ 39.png");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 56px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
 
+.deals_2 {
+    background-image: url("/Images/Group\ 40.png");
+}
+
+.deals_card,
+.deals_card_2 {
+    width: 50%;
+    float: right;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 50px;
+}
+
+.deals_card_2 {
+    float: left;
+}
+
+.deals_card_icon {
+    display: flex;
+    gap: 20px;
+}
+
+
+.deals_card_icon i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.deals_card_icon span {
+    color: #5A5A5D;
+}
+
+.deals_card h2 {
+    font-size: 24px;
+    margin: 26px 0 16px 0;
+    color: var(--primary-color);
+}
+
+.deals_card h3 {
+    font-size: 24px;
+    margin: 26px 0 16px 0;
+    color: var(--primary-color);
+}
+
+.deals_button {
+    display: flex;
+    justify-content: center;
+}
+
+/* get perfect */
+.perfect {
+    display: flex;
+    gap: 30px;
+}
+
+.perfect_contat {
+    width: 50%;
+}
+
+.perfect_contat h2 {
+    font-size: 40px;
+    margin: 24px 0;
+}
+
+.perfect_contat li {
+    color: #000000;
+    margin: 20px;
+}
+
+.perfect_vedio {
+    width: 50%;
+    border-radius: 16px;
+}
+
+.perfect_vedio video {
+
+    border-radius: 16px;
+}
+
+
+/* newsletter */
+.newsletter {
+    display: flex;
+    gap: 20px;
+}
+
+.newsletter_contant {
+    width: 40%;
+}
+
+.newsletter_contant h1 {
+    font-size: 40px;
+}
+
+.newsletter_contant p {
+    margin: 16px 0;
+}
+
+.newsletter_input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newsletter_input input {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.newsletter_input button {
+    width: 100%;
+}
+
+hr {
+    border: .4px solid #1313181e;
+    margin: 10px 0;
+}
+
+.newsletter_img {
+    width: 60%;
+    background-image: url("/Images/Rectangle\ 8\ \(1\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 10px;
+
+}
+
+.sav_up {
+    width: 200px;
+    height: 70px;
+    transform: rotate(-19deg);
+    border-radius: 16px;
+    background: #FF5400;
+    margin-bottom: 25px;
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.footer_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_pera{
+    padding: 0 100px;
+    margin: 15px 0;
+}
 /* mobile resposive */
 @media only screen and (max-width: 600px) {
     .container {
         margin-bottom: 24px;
     }
-
+    .logo img {
+        width: 28px;
+        height: 30px;
+    }
+    .logo h2 {
+        font-size: 21px;
+    }
     .menu-item {
         display: none;
     }
@@ -389,12 +596,73 @@ nav {
     .destination_img_7 {
         width: 100%;
     }
-/* why choose  */
-.choose_containe {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.choos_item_3 {
-    transform: translateX(0%);
-}
+
+    /* why choose  */
+    .choose_containe {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .choos_item_3 {
+        transform: translateX(0%);
+    }
+
+    /* deals and dscount */
+    .deals,
+    .deals_2,
+    .deals_3 {
+        position: relative;
+    }
+
+    .deals_card,
+    .deals_card_2 {
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .deals_card_icon {
+        flex-wrap: wrap;
+    }
+
+    /* perfect get section */
+    .perfect {
+        flex-direction: column;
+    }
+
+    .perfect_contat,
+    .perfect_vedio {
+        width: 100%;
+    }
+
+    .perfect_contat h2 {
+        font-size: 20px;
+    }
+
+    .perfect_contat p {
+        font-size: 14px;
+    }
+
+    /* newsletter */
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter_contant h1 {
+        font-size: 20px;
+    }
+
+    .newsletter_contant,
+    .newsletter_img {
+        width: 100%;
+    }
+
+    .newsletter_img {
+        width: 100%;
+        height: 300px;
+    }
+    /* footer */
+    .footer_pera{
+        padding: 0;
+    }
 }
